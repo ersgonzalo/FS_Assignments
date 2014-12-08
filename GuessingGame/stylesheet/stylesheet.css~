@@ -1,0 +1,53 @@
+/* Stylesheet behind WowGuesser */
+
+body {
+	background-color: #F2EDE0;
+}
+
+table {
+	margin: auto;
+	background-color: #1E4151;
+}
+
+th {
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	font-size: 35px;
+}
+
+td {
+	height: 25px;
+	width: 75px;
+}
+
+#btn {
+	margin-right: auto;
+	margin-left: auto;
+	max-height: 25px;
+	width: 100px;
+}
+
+.main {
+	width: 150px;
+	height: 150px;
+}
+
+.showBot{
+	margin:0 auto;
+	max-height: 75px;
+	max-width: 75px;
+}
+
+.showTop{
+	margin:0 auto;
+	max-height: 75px;
+	max-width: 75px;
+}
+
+.doge{
+	float: right;	
+	bottom: auto;
+	position: relative;
+	max-width: 50%;
+	max-height: 50%;
+
+}
