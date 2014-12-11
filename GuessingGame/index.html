@@ -5,38 +5,38 @@
 <link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
 </head>
 
-	<title>Number Guessers</title>
+	<title>Number Guesser</title>
 
 <body>
 	<table>
 		<tr>
-			<th colspan="3">Number Guesser</hr>
+			<th colspan="3">Number Guessing Game</hr>
 		</tr>
 		<tr id = "1">
 			<td></td>
-			<td></td>
+			<td class = "dogeify">Much guess, such number between 1 - 100, very estimate.</td>
 			<td><img class="showTop" src="images/upvote.png"></td>
 		</tr>
 		<tr id = "2">
 		  <form>
 			<td></td>
-			<td><input class = "main" type="number"></td>
+			<td><input id = "mainBox" type="number" value = ""></td>
 			<td></td>
 		</tr>
 		<tr id = "3">
 			<td></td>
-			<td><input id="btn" type="submit" value="Guess"></td>
+			<td><input class="btn" type="Submit" value="Guess"></td>
 			<td><img class="showBot" src="images/downvote.png"></td>
-		  </form>
 		</tr>
 		<tr id = "4">
-			<td><input id="btn" type="reset" value="Restart"></td>
-			<td><input id="btn" type="button" value="Hint"></td>
-			<td><input id="btn" type="button" value="Feeling wow?"></td>
+			<td><input class="btn" type="Reset" value="Restart"></td>
+			<td><input class="btn" type="button" value="Hint"></td>
+			<td><input class="btn" type="button" value="Feeling wow?"></td>
+		  </form>
 		</tr>
 	</table>
 
-	<img class = "doge" src="images/dogedrawflip.png" />
+	<img id = "doge" src="images/dogedrawflip.png" />
 </body>
 
 </html>
