@@ -7,7 +7,7 @@
 
 	<title>Number Guesser</title>
 
-<body>
+<body onload="resetGame()">
 	<table>
 		<tr>
 			<th colspan="3">Number Guessing Game</hr>
@@ -15,23 +15,23 @@
 		<tr id = "1">
 			<td></td>
 			<td class = "dogeify">Much guess, such number between 1 - 100, very estimate.</td>
-			<td><img class="showTop" src="images/upvote.png"></td>
+			<td><img id="showTop" src="images/upvote.png"></td>
 		</tr>
 		<tr id = "2">
 		  <form>
-			<td></td>
-			<td><input id = "mainBox" type="number" value = ""></td>
-			<td></td>
+			<td id = "chanceLeft"></td>
+			<td><input id = "mainBox" type="number" placeholder="so guess here plz"></td>
+			<td id = "numStatus"></td>
 		</tr>
 		<tr id = "3">
 			<td></td>
-			<td><input class="btn" type="Submit" value="Guess"></td>
-			<td><img class="showBot" src="images/downvote.png"></td>
+			<td><input class="btn" type="button" id="Submit" onlick="checkGame()" value="Guess"></td>
+			<td><img id="showBot" src="images/downvote.png"></td>
 		</tr>
 		<tr id = "4">
-			<td><input class="btn" type="Reset" value="Restart"></td>
+			<td><input class="btn" type="button" onclick="resetGame()" value="Restart"></td>
 			<td><input class="btn" type="button" value="Hint"></td>
-			<td><input class="btn" type="button" value="Feeling wow?"></td>
+			<td><input class="btn" id="feelWow" type="button" onclick="wowTester()" value="Feeling wow?"></td>
 		  </form>
 		</tr>
 	</table>

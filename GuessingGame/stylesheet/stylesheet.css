@@ -27,16 +27,15 @@ td {
 
 .dogeify{
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
-	text-shadow: 2px 2px 2px #FFFFFF;
 }
 
-.showBot{
+#showBot{
 	margin:0 auto;
 	max-height: 75px;
 	max-width: 75px;
 }
 
-.showTop{
+#showTop{
 	margin:0 auto;
 	max-height: 75px;
 	max-width: 75px;
