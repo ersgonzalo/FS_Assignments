@@ -1,24 +1,41 @@
-var guessNum = 0;
-var chances = 5;
+var guessNum;
+var chances;
+var actualNum;
+
+$(document).ready(function(){
+	resetGame();
+	
+	$('Submit').click(function(){
+		checkGame();
+	});
+});
 
 function checkGame(){
+		
+		guessNum = parseInt(document.getElementById('mainBox').value);
+		
+		console.log(guessNum);
+		console.log(chances);
+		chances--;
+		console.log(chances);
+		/*
 		if(chances === 0){
 			//console.log("Sorry, out of tries! Your number was " + actualNum + ".");
 			alert("Sorry, you lose!");
 			document.getElementById("Submit").disabled = true;
-			break;
 		}
 		else{
-			numChecker();
-		}
-
+			numChecker(guessNum);
+		}*/
 }
 
 function numChecker(){
 	
-	guessNum = document.getElementById('mainBox').value;
-
+	
+	console.log(guessNum);
+	
 	if((guessNum > 0) || (guessNum < 101)){
+		arrowShower();
 		switch(guessNum){
 			case Math.abs(guessNum - actualNum < 5):
 				document.getElementById('numStatus').innerHTML ="Burningly close!";
@@ -42,17 +59,26 @@ function numChecker(){
 }
 
 function resetGame(){
-	
-	chances = 5;
+	chances = 1;
 	var actualNum = Math.floor((Math.random() * 100) + 1);
-
-	document.getElementById("Submit").disabled = false; 
-
+	
+	document.getElementById("Submit").disabled = false;
+	console.log(chances);
 }
 
 function wowTester(){
-
 	document.getElementById("Submit").disabled = true;
+}
 
-
+function arrowShower(){
+	if(guessNum > actualNum){
+		$('#showTop').show();
+		$('#showBot').hide();
+	}
+	else if(guessNum < actualNum){
+		$('#showTop').hide();
+		$('#showBot').show();
+	}
+	else
+		prompt("Error!");
 }
