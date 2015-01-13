@@ -1,7 +1,7 @@
 function Calculator(){
 
 /*
-new simulates oop, if it says new 'Object', simply create it as above
+'new' keyword simulates oop, if it says new 'Object', simply create it as above
 Constructor is process of creating an object within that function
 this.constructor, it is run every time one makes a new calculator
 if class is created with this, it takes a lot of memory, if another calculator
